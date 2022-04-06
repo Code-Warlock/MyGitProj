@@ -1,0 +1,107 @@
+@charset "UTF-8";
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html , body{
+  box-sizing: border-box;
+}
+
+/* div.one{
+  width: 50%;
+  height: 50vh ;
+  margin: 0 auto;
+  border: 2px solid red ;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+div.two{
+  width: 50%;
+  height: 50vh ;
+  margin: 40px auto;
+  border: 2px solid green ;
+  display:grid;
+  place-items: center;
+}
+div.three{
+  width: 50%;
+  height: 50vh ;
+  margin: 40px auto;
+  border: 2px solid blue ;
+  display:table;
+}
+div.three > p{
+  display:table-cell;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+div.four{
+  width: 50%;
+  height: 50vh ;
+  margin: 40px auto;
+  border: 2px solid blue ;
+  position: relative;
+}
+div.four > p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+div.five{
+  width: 50%;
+  height: 50vh ;
+  margin: 40px auto;
+  display: flex;
+  border: 2px solid yellow;
+}
+div.five > p{
+  margin: auto;
+} */
+
+div.jumbotron{
+  min-height: 100vh;
+  min-width: 100%;
+  /* background-color: #ff000010; */
+  background-image: linear-gradient(90deg , #ff000030 , #fc678a44);
+  background-position: left;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  overflow: hidden;
+}
+div.jumbotron > p{
+  font-size: 2rem;
+  font-weight: 900;
+  animation-name: strawberry;
+  animation-duration:3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+div.jumbotron > video{
+  min-width:100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  z-index: -1;
+}
+
+@keyframes strawberry{
+  from{
+    opacity: 0;
+    transform: scale(.2)
+  }
+  to{
+    opacity: 1;
+    transform: scale(1.3)
+  }
+}
